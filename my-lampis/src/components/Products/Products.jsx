@@ -8,7 +8,7 @@ const products = [
   {
     id: 1,
     name: "Pet Trimmer",
-    description: "Electric Pets Hair Low Noise Trimmers Shaver Shears for Dogs",
+    description: "Electric Pets Hair Low Noise Trimmers for Dogs",
     price: "€39.99",
     image:
       "https://images-na.ssl-images-amazon.com/images/I/71qFFEQLzGL._AC_SL1500_.jpg",
