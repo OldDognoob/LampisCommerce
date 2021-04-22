@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
-// import Products from './components/Products/Products';
+import Products from './components/Products/Products';
 import {commerce} from './lib/commerce';
 
-import {Products, Navbar} from './components';
+import {products, Navbar} from './components';
 
 const App = () => {
     const[products, setProducts] = useState([]);
@@ -21,7 +21,7 @@ const App = () => {
     return (
         <div>
             <Navbar/>
-            <Products/>
+            <Products products={products}/>
         </div>
     )
 }

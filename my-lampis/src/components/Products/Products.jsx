@@ -4,26 +4,26 @@ import { Grid } from "@material-ui/core";
 import Product from "./Product/Product";
 import useStyles from "./styles";
 
-const products = [
-  {
-    id: 1,
-    name: "Pet Trimmer",
-    description: "Electric Pets Hair Low Noise Trimmers for Dogs",
-    price: "€39.99",
-    image:
-      "https://images-na.ssl-images-amazon.com/images/I/71qFFEQLzGL._AC_SL1500_.jpg",
-  },
-  {
-    id: 2,
-    name: "Toys Dog Basket",
-    description: "Pet Toy and Accessory Storage Bin",
-    price: "€15.99",
-    image:
-      "https://images-na.ssl-images-amazon.com/images/I/81EiKQp1veL._AC_SL1500_.jpg",
-  },
-];
+// const products = [
+//   {
+//     id: 1,
+//     name: "Pet Trimmer",
+//     description: "Electric Pets Hair Low Noise Trimmers for Dogs",
+//     price: "€39.99",
+//     image:
+//       "https://images-na.ssl-images-amazon.com/images/I/71qFFEQLzGL._AC_SL1500_.jpg",
+//   },
+//   {
+//     id: 2,
+//     name: "Toys Dog Basket",
+//     description: "Pet Toy and Accessory Storage Bin",
+//     price: "€15.99",
+//     image:
+//       "https://images-na.ssl-images-amazon.com/images/I/81EiKQp1veL._AC_SL1500_.jpg",
+//   },
+// ];
 
-const Products = () => {
+const Products = ({products}) => {
   const classes = useStyles();
   return (
     <main className={classes.content}>
