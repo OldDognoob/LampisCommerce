@@ -10,11 +10,18 @@ const App = () => {
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
     setProducts(data);
+    // commerce.products.list().then((products)=>{
+    //     this.setState({products: products.data});
+    // }).catch((error) =>{
+    //     console.log('There was an error fetching the products', error);
+    // });
   };
 
   useEffect(() => {
     fetchProducts();
   }, []);
+
+
 
   console.log(products);
 
@@ -28,6 +35,6 @@ const App = () => {
       </div>
     </Router>
   );
-};
+  };
 
 export default App;
